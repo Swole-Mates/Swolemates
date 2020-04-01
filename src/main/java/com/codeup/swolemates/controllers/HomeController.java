@@ -11,6 +11,7 @@ public class HomeController {
 
     @GetMapping("/")
     @ResponseBody
+
     public String landing() {
         return "This is the landing page for Swole Mates!";
     }
@@ -21,3 +22,4 @@ public class HomeController {
         return "home";
     }
 }
+
