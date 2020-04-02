@@ -4,10 +4,9 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-//@Table(name = "users")
-public class User {
+//@Table(name = "preferences")
+public class Preferences {
 
-    //Create a User class, with (at least) fields for id, username, email, and password.
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(columnDefinition = "INT(11) UNSIGNED")
@@ -16,33 +15,29 @@ public class User {
     @Column(nullable = false, unique = true)
     private String username;
 
-    @Column(nullable = false, unique = true)
-    private String email;
-
     @Column(nullable = false)
     private String password;
 
-//    @OneToMany(mappedBy = "user")
-//    private List<Post> posts;
+    @Column(nullable = false)
+    private String preference;
 
-    public User(){};
-
-
+    public Preferences(){};
 
     //constructor
-    public User(long id, String username, String email, String password){
+    public Preferences(long id, String username, String email, String password, String preference){
         this.id = id;
         this.username = username;
-        this.email = email;
         this.password = password;
+        this.preference = preference;
     }
 
     //copy constructor
-    public User(User copy) {
+    public Preferences(Preferences copy) {
         id = copy.id;
-        email = copy.email;
         username = copy.username;
         password = copy.password;
+        preference = copy.preference;
+
     }
 
     //getters and setters
@@ -62,13 +57,6 @@ public class User {
         this.username = username;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public String getPassword() {
         return password;
@@ -85,4 +73,12 @@ public class User {
 //    public void setPosts(List<Post> posts) {
 //        this.posts = posts;
 //    }
+
+    public String getPreference() {
+        return preference;
+    }
+
+    public void setPreference(String preference) {
+        this.preference = preference;
+    }
 }

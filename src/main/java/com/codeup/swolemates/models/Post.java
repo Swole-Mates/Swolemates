@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name="posts")
+//@Table(name="posts")
 public class Post {
 
     @Id
@@ -19,7 +19,7 @@ public class Post {
     private String body;
 
     @ManyToOne
-    @JoinColumn (name = "user_id")
+//    @JoinColumn (name = "user_id")
     private User user;
 
     //blank constructor
