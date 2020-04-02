@@ -1,4 +1,4 @@
-//package com.codeup.swolemates.models;
-//
-//public class Age {
-//}
+package com.codeup.swolemates.models;
+
+public class Age {
+}
