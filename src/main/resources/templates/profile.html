@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Viewing profile</title>
+</head>
+<body>
+<h1 th:text="${user.username}"></h1>
+<p th:text="${user.age}"></p>
+<a th:href="'mailto:'+${user.email}"><span th:text="${user.email}"></span> </a>
+<br>
+</body>
+</html>

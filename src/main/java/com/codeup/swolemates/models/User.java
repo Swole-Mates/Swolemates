@@ -7,45 +7,43 @@ import java.util.List;
 @Table(name = "users")
 public class User {
 
-    //Create a User class, with (at least) fields for id, username, email, and password.
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(columnDefinition = "INT(11) UNSIGNED")
     private long id;
 
     @Column(nullable = false, unique = true)
     private String username;
 
+    @Column(nullable = false)
+    private String password;
+
     @Column(nullable = false, unique = true)
     private String email;
 
     @Column(nullable = false)
-    private String password;
+    private long age;
 
-//    @OneToMany(mappedBy = "user")
-//    private List<Post> posts;
+    @Column(nullable = false)
+    private long zip;
 
-    public User(){};
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+    private List<Post> posts;
 
+    @OneToMany(mappedBy = "user")
+    private List<Ad> ads;
 
-
-    //constructor
-    public User(long id, String username, String email, String password){
-        this.id = id;
-        this.username = username;
-        this.email = email;
-        this.password = password;
+    public User() {
     }
 
-    //copy constructor
     public User(User copy) {
-        id = copy.id;
+        id = copy.id; // This line is SUPER important!
         email = copy.email;
         username = copy.username;
         password = copy.password;
+        age = copy.age;
+        zip = copy.zip;
     }
 
-    //getters and setters
     public long getId() {
         return id;
     }
@@ -62,14 +60,6 @@ public class User {
         this.username = username;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -78,11 +68,35 @@ public class User {
         this.password = password;
     }
 
-//    public List<Post> getPosts() {
-//        return posts;
-//    }
-//
-//    public void setPosts(List<Post> posts) {
-//        this.posts = posts;
-//    }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public long getAge() {return age;}
+
+    public void setAge(long age) {this.age = age;}
+
+    public long getZip() {return zip;}
+
+    public void setZip(long zip) {this.zip = zip;}
+
+    public List<Post> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
+    }
+
+    public List<Ad> getAds() {
+        return ads;
+    }
+
+    public void setAds(List<Ad> ads) {
+        this.ads = ads;
+    }
 }
