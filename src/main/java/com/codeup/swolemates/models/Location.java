@@ -4,16 +4,16 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table (name = "location")
+//@Table (name = "location")
 public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column(nullable = false, length = 50)
     private String zipcode;
-    @ManyToMany(mappedBy = "location")
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "zipcode")
-    private List<Entry> entry;
+//    @ManyToMany(mappedBy = "location")
+//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "zipcode")
+//    private List<Entry> entry;
 
     public Location(){
     }
