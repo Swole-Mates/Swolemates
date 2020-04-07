@@ -21,6 +21,9 @@
 
     <dependencies>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 81eda44c7e30581a80987ca57fb6e03f2be51c7e
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -48,7 +51,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 81eda44c7e30581a80987ca57fb6e03f2be51c7e
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
@@ -91,14 +97,21 @@
                 <artifactId>thymeleaf-extras-springsecurity5</artifactId>
                 <version>3.0.4.RELEASE</version>
             </dependency>
+<<<<<<< HEAD
 
 >>>>>>> 05667134a5aa6d47fe882188e9dbda14912c0881
+=======
+>>>>>>> 81eda44c7e30581a80987ca57fb6e03f2be51c7e
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
             <version>2.1.2.RELEASE</version>
         </dependency>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 81eda44c7e30581a80987ca57fb6e03f2be51c7e
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -133,8 +146,12 @@
             <artifactId>json</artifactId>
             <version>20140107</version>
         </dependency>
+<<<<<<< HEAD
 =======
 >>>>>>> 05667134a5aa6d47fe882188e9dbda14912c0881
+=======
+
+>>>>>>> 81eda44c7e30581a80987ca57fb6e03f2be51c7e
     </dependencies>
 
     <build>
