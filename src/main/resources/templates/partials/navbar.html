@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Navbar Title</title>
+    <title>Navbar</title>
 </head>
 <body>
 <nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -11,6 +11,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="/posts">Workout Posts<span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link active" href="/posts/create">Create a new workout listing</a>
@@ -26,3 +27,6 @@
         <button class="btn-link btn my-2 my-sm-0 ml-2" style="color: black">Logout</button>
     </form>
 </nav>
+
+</body>
+</html>
