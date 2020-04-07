@@ -5,6 +5,7 @@ import com.codeup.swolemates.models.User;
 import com.codeup.swolemates.repositories.PostRepo;
 import com.codeup.swolemates.repositories.UserRepo;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.csrf.CsrfAuthenticationStrategy;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -61,6 +62,7 @@ public class PostController {
         newPost.setBody(body);
         User loggedIn = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         newPost.setUser(loggedIn);
+        System.out.println(newPost.getUser().getId() + "!!!!!!!");
         postDao.save(newPost);
         return "redirect:/posts";
     }
