@@ -6,9 +6,30 @@
     <title>Viewing profile</title>
 </head>
 <body>
-<h1 th:text="${user.username}"></h1>
-<p th:text="${user.age}"></p>
-<a th:href="'mailto:'+${user.email}"><span th:text="${user.email}"></span> </a>
-<br>
+<!--<h1 th:text="${user.username}"></h1>-->
+<!--<p th:text="${user.age}"></p>-->
+<!--<a th:href="'mailto:'+${user.email}"><span th:text="${user.email}"></span> </a>-->
+<!--<br>-->
+
+<script>
+    const unirest = require("unirest");
+
+    const req = unirest("POST", "https://redline-redline-zipcode.p.rapidapi.com/rest/multi-radius.json/10/mile");
+
+    req.headers({
+        "x-rapidapi-host": "redline-redline-zipcode.p.rapidapi.com",
+        "x-rapidapi-key": "fe2e065f2cmshc35f7d502c907bfp132ab7jsnaf119048b39c",
+        "content-type": "application/x-www-form-urlencoded"
+    });
+
+    req.form({});
+
+    req.end(function (res) {
+        if (res.error) throw new Error(res.error);
+
+        console.log(res.body);
+    });
+
+</script>
 </body>
 </html>

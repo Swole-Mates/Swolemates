@@ -8,5 +8,5 @@ public interface LocationRepository extends JpaRepository<Location, Long> {
     @Query
     Location getLocationById(long id);
     @Query
-    Location getLocationByCountry(String country);
+    Location getLocationByZipcode(String zipcode);
 }
