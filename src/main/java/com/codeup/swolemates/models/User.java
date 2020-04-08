@@ -22,6 +22,14 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name="users_user_matches",
+            joinColumns={@JoinColumn(name="user_id")},
+            inverseJoinColumns={@JoinColumn(name="user_match_id")}
+    )
+    List<UserMatch> userMatchList;
+
 //    @OneToMany(mappedBy = "user")
 //    private List<Post> posts;
 
@@ -46,6 +54,8 @@ public class User {
     }
 
     //getters and setters
+
+
     public long getId() {
         return id;
     }
@@ -78,11 +88,11 @@ public class User {
         this.password = password;
     }
 
-//    public List<Post> getPosts() {
-//        return posts;
-//    }
-//
-//    public void setPosts(List<Post> posts) {
-//        this.posts = posts;
-//    }
+    public List<UserMatch> getUserMatchList() {
+        return userMatchList;
+    }
+
+    public void setUserMatchList(List<UserMatch> userMatchList) {
+        this.userMatchList = userMatchList;
+    }
 }
