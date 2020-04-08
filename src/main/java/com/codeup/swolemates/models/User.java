@@ -111,7 +111,7 @@ public class User {
     public void setPosts(List<Post> posts) {
         this.posts = posts;
     }
-}
+
 
 //    public List<UserMatch> getUserMatchList() {
 //        return userMatchList;
@@ -123,11 +123,11 @@ public class User {
 //    }
 //}
 
-//    public List<Ad> getAds() {
-//        return ads;
-//    }
-//
-//    public void setAds(List<Ad> ads) {
-//        this.ads = ads;
-//    }
-//    }
+    public List<Ad> getAds() {
+        return ads;
+    }
+
+    public void setAds(List<Ad> ads) {
+        this.ads = ads;
+    }
+    }
