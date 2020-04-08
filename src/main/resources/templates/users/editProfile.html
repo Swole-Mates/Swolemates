@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<body>
+<nav th:replace="partials/navbar :: navbar"></nav>
+
+<form th:action="@{|/edit/${user.id}|}" method="POST" th:object="${user}">
+
+    <label for="username">Username</label>
+    <input th:field="*{username}"/>
+
+    <label for="email">Email</label>
+    <input th:field="*{email}"/>
+
+    <label for="password">Password</label>
+    <input type="password" th:field="*{password}"/>
+
+    <label for="age">Age</label>
+    <input  th:field="*{age}" />
+
+    <label for="zip">ZIP</label>
+    <input  th:field="*{zip}" />
+
+
+    <input value="Save Changes" type="submit" />
+</form>
+
+
+</body>
+</html>

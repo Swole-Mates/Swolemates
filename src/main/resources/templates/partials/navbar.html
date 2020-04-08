@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Navbar Title</title>
+    <title>Navbar</title>
 </head>
 <body>
 <nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -11,10 +11,15 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="/posts">Home<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="posts/profile">Profile</a>
+            <a class="nav-item nav-link active" href="/posts">Workout Posts<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="/posts/create">Create a new workout listing</a>
+            <a class="nav-item nav-link" href="/profile">Profile</a>
+            <a class="nav-item nav-link" href="/about-us">About Us</a>
         </div>
+        </ul>
     </div>
     <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -23,4 +28,8 @@
     <form th:action="@{/logout}" th:method="post">
         <button class="btn-link btn my-2 my-sm-0 ml-2" style="color: black">Logout</button>
     </form>
+    </div>
 </nav>
+
+</body>
+</html>
