@@ -23,6 +23,17 @@ public class User {
     @Column(nullable = false)
     private long age;
 
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name="users_user_matches",
+            joinColumns={@JoinColumn(name="user_id")},
+            inverseJoinColumns={@JoinColumn(name="user_match_id")}
+    )
+    List<UserMatch> userMatchList;
+
+    public User(){};
+  
     @Column(nullable = false)
     private long zip;
 
@@ -43,7 +54,7 @@ public class User {
         age = copy.age;
         zip = copy.zip;
     }
-
+  
     public long getId() {
         return id;
     }
@@ -91,6 +102,13 @@ public class User {
     public void setPosts(List<Post> posts) {
         this.posts = posts;
     }
+
+    public List<UserMatch> getUserMatchList() {
+        return userMatchList;
+    }
+
+    public void setUserMatchList(List<UserMatch> userMatchList) {
+        this.userMatchList = userMatchList;
 
     public List<Ad> getAds() {
         return ads;
