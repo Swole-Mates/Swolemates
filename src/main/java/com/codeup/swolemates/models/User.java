@@ -26,13 +26,16 @@ public class User {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
-            name="users_user_matches",
-            joinColumns={@JoinColumn(name="user_id")},
-            inverseJoinColumns={@JoinColumn(name="user_match_id")}
+            name = "users_user_matches",
+            joinColumns = {@JoinColumn(name = "user_id")},
+            inverseJoinColumns = {@JoinColumn(name = "user_match_id")}
     )
     List<UserMatch> userMatchList;
 
-    public User(){};
+    public User() {
+    }
+
+    ;
 
     @Column(nullable = false)
     private long zip;
@@ -43,8 +46,6 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Ad> ads;
 
-    public User() {
-    }
 
     public User(User copy) {
         id = copy.id; // This line is SUPER important!
@@ -87,13 +88,21 @@ public class User {
         this.email = email;
     }
 
-    public long getAge() {return age;}
+    public long getAge() {
+        return age;
+    }
 
-    public void setAge(long age) {this.age = age;}
+    public void setAge(long age) {
+        this.age = age;
+    }
 
-    public long getZip() {return zip;}
+    public long getZip() {
+        return zip;
+    }
 
-    public void setZip(long zip) {this.zip = zip;}
+    public void setZip(long zip) {
+        this.zip = zip;
+    }
 
     public List<Post> getPosts() {
         return posts;
@@ -102,19 +111,23 @@ public class User {
     public void setPosts(List<Post> posts) {
         this.posts = posts;
     }
-
-    public List<UserMatch> getUserMatchList() {
-        return userMatchList;
-    }
-
-    public void setUserMatchList(List<UserMatch> userMatchList) {
-        this.userMatchList = userMatchList;
-
-    public List<Ad> getAds() {
-        return ads;
-    }
-
-    public void setAds(List<Ad> ads) {
-        this.ads = ads;
-    }
 }
+
+//    public List<UserMatch> getUserMatchList() {
+//        return userMatchList;
+//    }
+//
+//    public List<Ad> setUserMatchList(List<UserMatch> userMatchList) {
+//        this.userMatchList = userMatchList;
+//        return setUserMatchList();
+//    }
+//}
+
+//    public List<Ad> getAds() {
+//        return ads;
+//    }
+//
+//    public void setAds(List<Ad> ads) {
+//        this.ads = ads;
+//    }
+//    }
