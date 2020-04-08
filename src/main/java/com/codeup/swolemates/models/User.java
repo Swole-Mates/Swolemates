@@ -33,7 +33,7 @@ public class User {
     List<UserMatch> userMatchList;
 
     public User(){};
-  
+
     @Column(nullable = false)
     private long zip;
 
@@ -54,7 +54,7 @@ public class User {
         age = copy.age;
         zip = copy.zip;
     }
-  
+
     public long getId() {
         return id;
     }
