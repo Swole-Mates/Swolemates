@@ -4,24 +4,24 @@
     <title>User Profile</title>
 </head>
 <body>
-<script>
-    const unirest = require("unirest");
+<!--<script>-->
+<!--    const unirest = require("unirest");-->
 
-    const req = unirest("POST", "https://redline-redline-zipcode.p.rapidapi.com/rest/multi-radius.json/10/mile");
+<!--    const req = unirest("POST", "https://redline-redline-zipcode.p.rapidapi.com/rest/multi-radius.json/10/mile");-->
 
-    req.headers({
-        "x-rapidapi-host": "redline-redline-zipcode.p.rapidapi.com",
-        "x-rapidapi-key": "fe2e065f2cmshc35f7d502c907bfp132ab7jsnaf119048b39c",
-        "content-type": "application/x-www-form-urlencoded"
-    });
+<!--    req.headers({-->
+<!--        "x-rapidapi-host": "redline-redline-zipcode.p.rapidapi.com",-->
+<!--        "x-rapidapi-key": "fe2e065f2cmshc35f7d502c907bfp132ab7jsnaf119048b39c",-->
+<!--        "content-type": "application/x-www-form-urlencoded"-->
+<!--    });-->
 
-    req.form({});
+<!--    req.form({});-->
 
-    req.end(function (res) {
-        if (res.error) throw new Error(res.error);
+<!--    req.end(function (res) {-->
+<!--        if (res.error) throw new Error(res.error);-->
 
-        console.log(res.body);
-    });
+<!--        console.log(res.body);-->
+<!--    });-->
 
 <nav th:replace="partials/navbar :: navbar"></nav>
 <div class="container">
@@ -34,7 +34,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-3 text-center">
-                    <a th:href="@{|/edit/${user.id}|}"><button>Edit profile</button></a>
+                    <a th:href="@{/edit}"><button>Edit profile</button></a>
                 </div>
             </div>
         </div>

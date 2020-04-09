@@ -3,7 +3,7 @@
 <body>
 <nav th:replace="partials/navbar :: navbar"></nav>
 
-<form th:action="@{|/edit/${user.id}|}" method="POST" th:object="${user}">
+<form th:action="@{/edit}" method="POST" th:object="${user}">
 
     <label for="username">Username</label>
     <input th:field="*{username}"/>
