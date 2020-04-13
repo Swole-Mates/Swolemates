@@ -12,9 +12,7 @@
         <div th:each="post : ${posts}">
             <a th:href="@{|/posts/${post.id}|}"><h1 th:text="${post.title}"></h1></a>
             <p th:text="${post.body}"></p>
-            <p>User Information : </p>
-            <p th:text="${post.user.username}">Username</p>
-            <p th:text="${post.user.age}">Age</p>
+<!--            <p>User Information : </p>-->
             <a th:href="'mailto:'+${post.user.email}"><span th:text="${post.user.email}"></span> </a>
 
                 <div th:if="${post.user.id} == ${user.id}">

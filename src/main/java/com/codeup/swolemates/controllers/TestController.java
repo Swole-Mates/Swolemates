@@ -23,12 +23,12 @@ public class TestController {
         this.userDao = userDao;
         this.postDao = postDao;
     }
-    @GetMapping("/test/user-select")
-    public String showAllUsers(Model model, Principal principal) {
-        model.addAttribute("user", userDao.findUserByUsername(principal.getName()));
-        model.addAttribute("userList", userDao.findAll());
-        return "talkjs/user-select";
-    }
+//    @GetMapping("/test/user-select")
+//    public String showAllUsers(Model model, Principal principal) {
+//        model.addAttribute("user", userDao.findUserByUsername(principal.getName()));
+//        model.addAttribute("userList", userDao.findAll());
+//        return "talkjs/user-select";
+//    }
     //comment to make it where i can commit
     @GetMapping("/test/{otherUserId}")
     public String getTestHtml(Model model, Principal principal, @PathVariable Long otherUserId) {
