@@ -4,7 +4,7 @@
 <!--    <th:block th:include="fragments/header.html :: header(title = 'Test Talk JS')"/>-->
     <meta class="talkJSAppId" th:content="${talkJSAppId}"/>
 </head>
-
+<nav th:replace="partials/navbar2 :: nav2"></nav>
 <body>
 <input id="user-id" type="hidden" th:value="${user.id}">
 <input id="username" type="hidden" th:value="${user.username}">

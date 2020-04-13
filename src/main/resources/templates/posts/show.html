@@ -6,6 +6,7 @@
     <title>Viewing Post</title>
 </head>
 <body>
+<nav th:replace="partials/navbar2 :: nav2"></nav>
     <h1 th:text="${post.title}"></h1>
     <p th:text="${post.body}"></p>
     <a th:href="'mailto:'+${post.user.email}"><span th:text="${post.user.email}"></span> </a>

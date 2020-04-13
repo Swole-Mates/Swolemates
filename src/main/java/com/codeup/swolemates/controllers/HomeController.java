@@ -20,5 +20,8 @@ public class HomeController {
     public String welcome() {
         return "home";
     }
+
+    @GetMapping("/about-us")
+    public String us() { return "about-us"; }
 }
 
