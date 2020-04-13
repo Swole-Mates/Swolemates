@@ -6,36 +6,35 @@
 
 </head>
 <body>
-<th:block th:fragment="nav">
+<th:block th:fragment="nav2">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Swole Mates</a>
+        <a class="navbar-brand" href="/">Swole Mates</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="custom-toggler navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto text-right">
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="/profile">Profile</a>-->
-<!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile">Profile</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/about-us">About Us</a>
                 </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sign-up">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Login</a>
-                    </li>
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="/logout">Logout</a>-->
-<!--                    </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="/posts">Work outs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/test/user-select">Messaging</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
             </ul>
         </div>
     </nav>
 </th:block>
 </body>
 </html>
-
