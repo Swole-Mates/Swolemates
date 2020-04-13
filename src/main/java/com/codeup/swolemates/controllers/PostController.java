@@ -28,17 +28,19 @@ public class PostController {
 
     @GetMapping("/posts")
     public String getPosts(Model model){
+        User loggedIn = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         model.addAttribute("posts", postDao.findAll());
+        model.addAttribute("user", loggedIn);
         return "posts/index";
     }
 
     @GetMapping("/posts/{id}")
     public String getPost(@PathVariable long id, Model model, Principal principal){
-//        User loggedIn = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        User loggedIn = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         String userName = "";
         if (principal != null) {
             userName = principal.getName();
-//            userDao.findByUsername(userName);
+            userDao.findByUsername(userName);
         }
         model.addAttribute("userName", userName);
         model.addAttribute("post",postDao.getOne(id));

@@ -48,16 +48,18 @@ public class UserController {
     }
 
 
-    @GetMapping("/edit/{id}")
-    public String edit(Model model, @PathVariable long id) {
-        User u = userDao.getOne(id);
+    @GetMapping("/edit")
+    public String edit(Model model) {
+        User loggedIn = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        User u = userDao.getOne(loggedIn.getId());
         model.addAttribute("user", u);
         return "users/editProfile";
     }
 
-    @PostMapping("/edit/{id}")
-    public String updateUser(@ModelAttribute User user, @PathVariable long id) {
-        User updatedUser = userDao.getOne(id);
+    @PostMapping("/edit")
+    public String updateUser(@ModelAttribute User user) {
+        User loggedIn = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        User updatedUser = userDao.getOne(loggedIn.getId());
         updatedUser.setEmail(user.getEmail());
         updatedUser.setUsername(user.getUsername());
         updatedUser.setAge(user.getAge());
