@@ -1,9 +1,13 @@
-.home-page{
-    background-color: firebrick;
+body{
+    background-image: url("img/imagecontainer/man-and-woman-holding-battle-ropes-1552242.jpg") !important;
+    background-size: cover;
 }
-.landing{
-    background-color: firebrick;
+nav{
+    opacity: 50%;
 }
-.stuff{
-    color: firebrick;
+#landing-h1{
+    color: whitesmoke;
+}
+#landing-btn{
+    color: whitesmoke;
 }
