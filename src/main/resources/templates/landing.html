@@ -1,19 +1,40 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title> Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheet.css">
 </head>
-<body>
-<h1>Welcome to the Swolemates landing page! Are you ready to workout?</h1>
+<body >
+<div th:include="partials/navbar :: nav"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="page-content">
 
-<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="/sign-up">Sign-up today!</a>
+    <div class="container ">
+        <div class="main-content my-4 d-flex flex-column justify-content-center align-items-center">
+            <h1 id="landing-h1" class="mb-0 mc-heading">Welcome to Swole Mates</h1>
+            <a href="/sign-up" id="landing-btn" class="mt-5"><button class="buy-stock-btn">Ready to get Swole?</button></a>
+        </div>
     </div>
-    <div>
-        <a class="nav-item nav-link" href="/login">Already have an account? click here!</a>
+
+    <div class="container">
+        <div>
+
+        </div>
     </div>
 
 </div>
+
 </body>
+</html>

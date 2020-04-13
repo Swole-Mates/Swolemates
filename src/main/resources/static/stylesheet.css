@@ -1,0 +1,13 @@
+body{
+    background-image: url("img/imagecontainer/man-and-woman-holding-battle-ropes-1552242.jpg") !important;
+    background-size: cover;
+}
+nav{
+    opacity: 50%;
+}
+#landing-h1{
+    color: whitesmoke;
+}
+#landing-btn{
+    color: whitesmoke;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //Returns location information for multiple zip codes.
+    let unirest = require("unirest");
+
+    let req = unirest("GET", "https://redline-redline-zipcode.p.rapidapi.com/rest/multi-info.json/08057%252C08055/degrees");
+
+    req.headers({
+        "x-rapidapi-host": "redline-redline-zipcode.p.rapidapi.com",
+        "x-rapidapi-key": "fe2e065f2cmshc35f7d502c907bfp132ab7jsnaf119048b39c"
+    });
+
+
+    req.end(function (res) {
+        if (res.error) throw new Error(res.error);
+
+        console.log(res.body);
+    });
+
+    // find all zip codes within a given radius of multiple zip codes.
+    let unirest = require("unirest");
+
+    let req = unirest("POST", "https://redline-redline-zipcode.p.rapidapi.com/rest/multi-radius.json/10/mile");
+
+    req.headers({
+        "x-rapidapi-host": "redline-redline-zipcode.p.rapidapi.com",
+        "x-rapidapi-key": "fe2e065f2cmshc35f7d502c907bfp132ab7jsnaf119048b39c",
+        "content-type": "application/x-www-form-urlencoded"
+    });
+
+    req.form({});
+
+    req.end(function (res) {
+        if (res.error) throw new Error(res.error);
+
+        console.log(res.body);
+    });
+
+    //Determine the distance between two zip codes.
+    let unirest = require("unirest");
+
+    let req = unirest("GET", "https://redline-redline-zipcode.p.rapidapi.com/rest/distance.json/08057/94035/mile");
+
+    req.headers({
+        "x-rapidapi-host": "redline-redline-zipcode.p.rapidapi.com",
+        "x-rapidapi-key": "fe2e065f2cmshc35f7d502c907bfp132ab7jsnaf119048b39c"
+    });
+
+
+    req.end(function (res) {
+        if (res.error) throw new Error(res.error);
+
+        console.log(res.body);
+    });
+
+    //Returns all zip codes within a radius of the given zip code.
+    let unirest = require("unirest");
+
+    let req = unirest("GET", "https://redline-redline-zipcode.p.rapidapi.com/rest/radius.json/08057/10/mile");
+
+    req.headers({
+        "x-rapidapi-host": "redline-redline-zipcode.p.rapidapi.com",
+        "x-rapidapi-key": "fe2e065f2cmshc35f7d502c907bfp132ab7jsnaf119048b39c"
+    });
+
+
+    req.end(function (res) {
+        if (res.error) throw new Error(res.error);
+
+        console.log(res.body);
+    });
+
+    //Returns location information for a zip code
+    let unirest = require("unirest");
+
+    let req = unirest("GET", "https://redline-redline-zipcode.p.rapidapi.com/rest/info.json/08057/degrees");
+
+    req.headers({
+        "x-rapidapi-host": "redline-redline-zipcode.p.rapidapi.com",
+        "x-rapidapi-key": "fe2e065f2cmshc35f7d502c907bfp132ab7jsnaf119048b39c"
+    });
+
+
+    req.end(function (res) {
+        if (res.error) throw new Error(res.error);
+
+        console.log(res.body);
+    });
+
+    //Returns zip codes for a given city.
+    let unirest = require("unirest");
+
+    let req = unirest("GET", "https://redline-redline-zipcode.p.rapidapi.com/rest/city-zips.json/Moorestown/NJ");
+
+    req.headers({
+        "x-rapidapi-host": "redline-redline-zipcode.p.rapidapi.com",
+        "x-rapidapi-key": "fe2e065f2cmshc35f7d502c907bfp132ab7jsnaf119048b39c"
+    });
+
+
+    req.end(function (res) {
+        if (res.error) throw new Error(res.error);
+
+        console.log(res.body);
+    });
+
+</script>
+
+</body>
+</html>
