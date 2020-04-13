@@ -44,7 +44,7 @@ public class UserController {
     public String profile(Model model) {
         User u = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         model.addAttribute("user", u);
-        return "/profile";
+        return "users/profile";
     }
 
 
