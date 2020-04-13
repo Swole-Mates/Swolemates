@@ -96,5 +96,11 @@ public class PostController {
         return "redirect:/posts";
     }
 
+    @GetMapping("/test/user-select")
+    public String showAllUsers(Model model, Principal principal) {
+        model.addAttribute("user", userDao.findUserByUsername(principal.getName()));
+        model.addAttribute("userList", userDao.findAll());
+        return "talkjs/user-select";
+    }
 
 }
