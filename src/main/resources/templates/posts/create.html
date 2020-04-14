@@ -27,7 +27,7 @@
             <br>
             <textarea id="body" name="body" th:text="body" placeholder="Enter body"></textarea>
             <br>
-            <button type="button" class="btn btn-lg bg-danger btn-outline-danger" id="button">Save Post</button>
+            <a th:href="@{/posts/create}" id="landing-btn" class="mt-3"><button type="submit" class="btn btn-lg bg-danger btn-outline-danger" id="button">Save Post</button></a>
         </form>
     </div>
 </div>
