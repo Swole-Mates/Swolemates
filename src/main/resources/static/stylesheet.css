@@ -64,6 +64,10 @@ a:hover {
     background-image: url("img/imagecontainer/person-lifting-barbell-indoors-2261485.jpg")!important;
     background-size: cover;
 }
+.view-bg{
+    background-image: url("img/imagecontainer/gray-and-black-barbell-669582.jpg") !important;
+    background-size: cover;
+}
 #signup-content{
     background-color: #559ea6;
 }
