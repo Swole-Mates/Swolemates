@@ -9,17 +9,29 @@
 }
 .login-body{
     background-color: #559ea6;
-   align-content: center;
+   background-size: cover;
 }
 
 .posts-bg{
     background-image: url("img/imagecontainer/brass-colored-ring-with-black-strap-1552251.jpg");
+    background-size: cover;
 }
 nav{
     opacity: 50% !important;
     /*background-color: transparent!important;*/
 }
-
+.profile-bg{
+    background-image: url("img/imagecontainer/grayscale-photo-of-black-adjustable-dumbbell-949131.jpg");
+    background-size: cover;
+}
+.create-bg{
+    background-image: url("img/imagecontainer/barbell-near-belt-949132.jpg");
+    background-size: cover;
+}
+.edit-bg{
+    background-image: url("img/imagecontainer/barbells-on-gray-surface-669584.jpg");
+    background-size: cover;
+}
 
 *{
     font-family: 'Permanent Marker', cursive;
@@ -74,6 +86,7 @@ nav{
 
 #about-us-container{
     font-family: 'Permanent Marker', cursive;
+    color: whitesmoke;
 }
 
 #landing-btn .buy-stock-btn{
@@ -98,6 +111,10 @@ nav{
     margin-left: auto;
     margin-right: auto;
 }
+#aboutus{
+    background-image: url("img/imagecontainer/gray-barbel-plates-669576.jpg");
+    background-size: cover;
+}
 .aboutContainer {
     margin: 2em auto;
     width: 90%;
@@ -117,10 +134,17 @@ nav{
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 1em;
+    background-color: #559ea6;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .aboutCard:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+i{
+    color: black;
+}
+.names{
+    color: black;
 }

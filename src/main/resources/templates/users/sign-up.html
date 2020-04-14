@@ -9,14 +9,10 @@
 <nav th:replace="partials/navbar :: nav"></nav>
 <body id="signup-bg">
 <div>
-    <div class="register-body d-flex justify-content-center">
-        <br>
-        <br>
-        <br>
-        <br>
+    <div class="row col-3 justify-content-center align-self-center mx-auto text-center p-2 card card-block shadow-lg login-box-image">
         <div class="text-center px-2">
         </div>
-        <div class="container justify-content-center col-3"  id="signup-content">
+        <div class="container justify-content-center col-11"  id="signup-content">
             <h1 class="text-center mb-4 justify-content-center sign-up">Sign up</h1>
             <form th:action="@{/register}" th:method="POST" th:object="${user}">
                 <div class="d-flex flex-column justify-content-center align-items-center">
