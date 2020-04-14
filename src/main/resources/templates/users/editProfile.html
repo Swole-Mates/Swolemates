@@ -8,6 +8,12 @@
 <body>
 <nav th:replace="partials/navbar2 :: nav2"></nav>
 
+<header class="container">
+    <div class="jumbotron bg-transparent text-white">
+        <h1 class="text-center display-1">Edit Profile</h1>
+    </div>
+</header>
+
 <div class="card mx-auto text-center mt-2" style="width: 35rem;">
     <div class="card-body" style="width: 35rem">
         <form th:action="@{/edit}" method="POST" th:object="${user}">
