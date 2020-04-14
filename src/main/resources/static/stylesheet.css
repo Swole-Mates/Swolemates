@@ -41,6 +41,10 @@ a:hover {
     background-image: url("img/imagecontainer/barbells-on-gray-surface-669584.jpg")!important;
     background-size: cover;
 }
+.editprofile-bg{
+    background-image: url("img/imagecontainer/black-steel-gym-plate-and-pair-of-blue-running-shoes-841134.jpg")!important;
+    background-size: cover;
+}
 
 .logo-bottom:hover{
     color: #DC3545;
