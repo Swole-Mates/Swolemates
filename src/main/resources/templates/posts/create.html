@@ -18,7 +18,6 @@
 </header>
 <div class="card mx-auto text-center md-2" style="width: 35rem;">
     <div class="card-body" style="width: 35rem">
-        <h1>Create Post</h1>
         <form th:action="@{|/posts/create|}" th:method="POST">
             <label for="title">Title</label>
             <br>
@@ -28,7 +27,7 @@
             <br>
             <textarea id="body" name="body" th:text="body" placeholder="Enter body"></textarea>
             <br>
-            <button type="button" class="btn btn-lg bg-danger btn-block btn-outline-danger" id="button">Save Post</button>
+            <button type="button" class="btn btn-lg bg-danger btn-outline-danger" id="button">Save Post</button>
         </form>
     </div>
 </div>
