@@ -9,23 +9,28 @@
 </head>
 <nav th:replace="partials/navbar2 :: nav2"></nav>
 <body>
-    <h1 th:text="${post.title}"></h1>
-    <p th:text="${post.body}"></p>
-    <h5>Additional user information:</h5>
-    <p th:text="${post.user.username}">Username</p>
-    <p th:text="${post.user.age}">Age</p>
-<!--    <a th:href="'mailto:'+${post.user.email}"><span th:text="${post.user.email}"></span> </a>-->
+<div class="card mx-auto text-center mt-2" style="width: 35rem;">
+    <div class="card-body" style="width: 35rem">
+        <h1 th:text="${post.title}"></h1>
+        <p th:text="${post.body}"></p>
+        <h5>Additional user information:</h5>
+        <p>Username</p>
+        <p th:text="${post.user.username}"></p>
+        <br>
+        <p>Age</p>
+        <p th:text="${post.user.age}">Age</p>
+    <!--    <a th:href="'mailto:'+${post.user.email}"><span th:text="${post.user.email}"></span> </a>-->
 
-<!--    <h5 th:text = "${post.user.username}"></h5>-->
-    <a th:href="@{|/test/${post.user.id}|}"><button>Chat</button></a>
+    <!--    <h5 th:text = "${post.user.username}"></h5>-->
+        <a th:href="@{|/test/${post.user.id}|}"><button class="btn btn-lg bg-danger btn-block btn-outline-danger" id="button">Chat</button></a>
 
-    <br>
-    <div sec:authorize="isAuthenticated()">
+        <br>
+        <div sec:authorize="isAuthenticated()">
 
-        <div th:if="${userName == post.user.username}">
-            <a th:href="@{|/posts/${post.id}/edit|}"><button type="button" class="btn btn-lg bg-danger btn-block btn-outline-danger" id="button">Edit Post</button></a>
+            <div th:if="${userName == post.user.username}">
+                <a th:href="@{|/posts/${post.id}/edit|}"><button type="button" class="btn btn-lg bg-danger btn-block btn-outline-danger" id="button">Edit Post</button></a>
+            </div>
         </div>
-    </div>
 <!--    <div sec:authorize="isAuthenticated()">-->
 <!--        This content is only shown to authenticated users.-->
 
@@ -33,6 +38,9 @@
 <!--        Username: <span th:text="${#authentication.principal.username}"/>-->
 <!--        Email: <span th:text="${#authentication.principal.email}"/>-->
 <!--    </div>-->
+    </div>
+</div>
+
 
 </body>
 </html>
