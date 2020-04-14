@@ -2,32 +2,36 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Edit Page</title>
 </head>
 <body>
 <nav th:replace="partials/navbar2 :: nav2"></nav>
 
-<form th:action="@{/edit}" method="POST" th:object="${user}">
+<div class="card mx-auto text-center mt-2" style="width: 35rem;">
+    <div class="card-body" style="width: 35rem">
+        <form th:action="@{/edit}" method="POST" th:object="${user}">
 
-    <label for="username">Username</label>
-    <input th:field="*{username}"/>
+            <label for="username">Username</label>
+            <input th:field="*{username}"/>
 
-    <label for="email">Email</label>
-    <input th:field="*{email}"/>
+            <label for="email">Email</label>
+            <input th:field="*{email}"/>
 
-    <label for="password">Password</label>
-    <input type="password" th:field="*{password}"/>
+            <label for="password">Password</label>
+            <input type="password" th:field="*{password}"/>
 
-    <label for="age">Age</label>
-    <input  th:field="*{age}" />
+            <label for="age">Age</label>
+            <input  th:field="*{age}" />
 
-    <label for="zip">ZIP</label>
-    <input  th:field="*{zip}" />
+            <label for="zip">ZIP</label>
+            <input  th:field="*{zip}" />
 
 
-    <input value="Save Changes" type="submit" />
-</form>
-
+            <input value="Save Changes" type="submit" />
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
