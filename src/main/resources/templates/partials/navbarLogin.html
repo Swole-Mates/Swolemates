@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+<th:block th:fragment="navLogin">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-xl">
+        <a class="navbar-brand swole-logo" href="/" id="swole-logo">Swole Mates</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="custom-toggler navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+<!--        <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--            <ul class="navbar-nav ml-auto text-right">-->
+<!--                &lt;!&ndash;                <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a class="nav-link" href="/profile">Profile</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="/login"><button type="button" id="login-button" class="btn btn-lg">Login</button></a>-->
+<!--                </li>-->
+<!--                &lt;!&ndash;                <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a class="nav-link" href="/sign-up">Register</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+<!--                &lt;!&ndash;                <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <a class="nav-link" href="/about-us">About Us</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;                        <a class="nav-link" href="/logout">Logout</a>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--            </ul>-->
+<!--        </div>-->
+    </nav>
+</th:block>
+</body>
+</html>
+

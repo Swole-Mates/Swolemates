@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <title>Edit Post</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <nav th:replace="partials/navbar2 :: nav2"></nav>
-<body class="edit-bg">
-    <h1>Edit Post</h1>
-    <form th:action="@{|/posts/${post.id}/edit|}" th:method="POST">
-        <label for="title">Title</label>
-        <input id="title" type="text" name="title" th:value="${post.title}" placeholder="Enter title">
-        <label for="body">Body</label>
-        <textarea id="body" name="body" th:text="${post.body}" placeholder="Enter body"></textarea>
-        <button>Update Post</button>
-    </form>
+<body>
+    <div class="card mx-auto text-center md-2" style="width: 35rem;">
+        <div class="card-body" style="width: 35rem">
+        <h1>Edit Post</h1>
+        <form th:action="@{|/posts/${post.id}/edit|}" th:method="POST">
+            <label for="title">Title</label>
+            <br>
+            <input id="title" type="text" name="title" th:value="${post.title}" placeholder="Enter title">
+            <br>
+            <label for="body">Body</label>
+            <br>
+            <textarea id="body" name="body" th:text="${post.body}" placeholder="Enter body"></textarea>
+            <br>
+            <button type="button" class="btn btn-lg bg-danger btn-block btn-outline-danger" id="button">Update Post</button>
+        </form>
+        </div>
+    </div>
 </body>
 </html>
