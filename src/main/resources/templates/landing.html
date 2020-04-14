@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body >
 <div th:include="partials/navbar :: nav"></div>
@@ -23,8 +24,9 @@
 
     <div class="container ">
         <div class="main-content my-4 d-flex flex-column justify-content-center align-items-center">
-            <h1 id="landing-h1" class="mb-0 mc-heading">Welcome to Swole Mates</h1>
-            <a href="/sign-up" id="landing-btn" class="mt-5"><button class="buy-stock-btn">Ready to get Swole?</button></a>
+            <h1 id="landing-h1" class="mb-2 mc-heading">Welcome to Swole Mates</h1>
+            <h5 id="quote">Find your next workout buddy today!</h5>
+            <a href="/sign-up" id="landing-btn" class="mt-3"><button type="button" class="btn bg-danger btn-block btn-outline-danger" id="button">Get Swole</button></a>
         </div>
     </div>
 
@@ -35,6 +37,7 @@
     </div>
 
 </div>
+<div th:include="partials/footer :: footer"></div>
 
 </body>
 </html>
