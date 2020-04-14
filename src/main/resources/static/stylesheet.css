@@ -21,11 +21,19 @@ nav{
     /*background-color: transparent!important;*/
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b09b568755b4d64d7a93ece96e09c261c136a4c
 
 a:hover{
     color: white;
     /*background-color: #DC3545;*/
+<<<<<<< HEAD
 =======
+=======
+  
+>>>>>>> 9b09b568755b4d64d7a93ece96e09c261c136a4c
 .profile-bg{
     background-image: url("img/imagecontainer/grayscale-photo-of-black-adjustable-dumbbell-949131.jpg");
     background-size: cover;
@@ -37,7 +45,11 @@ a:hover{
 .edit-bg{
     background-image: url("img/imagecontainer/barbells-on-gray-surface-669584.jpg");
     background-size: cover;
+<<<<<<< HEAD
 >>>>>>> f719cefce20167889783c8e0fe8ed010661c384a
+=======
+
+>>>>>>> 9b09b568755b4d64d7a93ece96e09c261c136a4c
 }
 
 .logo-bottom:hover{
