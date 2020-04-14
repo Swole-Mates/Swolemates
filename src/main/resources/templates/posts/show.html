@@ -12,7 +12,7 @@
     <h5>Additional user information:</h5>
     <p th:text="${post.user.username}">Username</p>
     <p th:text="${post.user.age}">Age</p>
-    <a th:href="'mailto:'+${post.user.email}"><span th:text="${post.user.email}"></span> </a>
+<!--    <a th:href="'mailto:'+${post.user.email}"><span th:text="${post.user.email}"></span> </a>-->
 
 <!--    <h5 th:text = "${post.user.username}"></h5>-->
     <a th:href="@{|/test/${post.user.id}|}"><button>Chat</button></a>
