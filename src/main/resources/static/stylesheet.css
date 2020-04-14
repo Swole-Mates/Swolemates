@@ -13,7 +13,7 @@
 }
 
 .posts-bg{
-    background-image: url("img/imagecontainer/brass-colored-ring-with-black-strap-1552251.jpg");
+    background-image: url("img/imagecontainer/brass-colored-ring-with-black-strap-1552251.jpg")!important;
     background-size: cover;
 }
 nav{
@@ -21,15 +21,15 @@ nav{
     /*background-color: transparent!important;*/
 }
 .profile-bg{
-    background-image: url("img/imagecontainer/grayscale-photo-of-black-adjustable-dumbbell-949131.jpg");
+    background-image: url("img/imagecontainer/grayscale-photo-of-black-adjustable-dumbbell-949131.jpg")!important;
     background-size: cover;
 }
 .create-bg{
-    background-image: url("img/imagecontainer/barbell-near-belt-949132.jpg");
+    background-image: url("img/imagecontainer/barbell-near-belt-949132.jpg")!important;
     background-size: cover;
 }
 .edit-bg{
-    background-image: url("img/imagecontainer/barbells-on-gray-surface-669584.jpg");
+    background-image: url("img/imagecontainer/barbells-on-gray-surface-669584.jpg")!important;
     background-size: cover;
 }
 
