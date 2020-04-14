@@ -9,9 +9,13 @@
 
 <body class="login-bg">
 <div th:include="partials/navbarLogin :: navLogin"></div>
+<header class="container">
+    <div class="jumbotron bg-transparent text-white">
+        <h1 class="text-center display-1">Login</h1>
+    </div>
+</header>
 <div class="row col-4 justify-content-center align-self-center mx-auto text-center p-2 card login-box-image">
     <div class="login-body">
-            <h1 class="mb-4">Log In</h1>
             <div class="mb-4 login-warn">
                 <div th:if="${param.error}">
                     Invalid Username or Password.

@@ -9,11 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-<nav th:replace="partials/navbarCreate :: navCreate"></nav>
 <body class="create-bg">
+<nav th:replace="partials/navbarCreate :: navCreate"></nav>
+<header class="container">
+    <div class="jumbotron bg-transparent text-white">
+        <h1 class="text-center display-1">Create Workout</h1>
+    </div>
+</header>
 <div class="card mx-auto text-center md-2" style="width: 35rem;">
     <div class="card-body" style="width: 35rem">
-        <h1>Create Post</h1>
         <form th:action="@{|/posts/create|}" th:method="POST">
             <label for="title">Title</label>
             <br>
@@ -23,7 +27,7 @@
             <br>
             <textarea id="body" name="body" th:text="body" placeholder="Enter body"></textarea>
             <br>
-            <button type="button" class="btn btn-lg bg-danger btn-block btn-outline-danger" id="button">Save Post</button>
+            <button type="button" class="btn btn-lg bg-danger btn-outline-danger" id="button">Save Post</button>
         </form>
     </div>
 </div>
