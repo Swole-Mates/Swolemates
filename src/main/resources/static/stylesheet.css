@@ -1,6 +1,19 @@
-body{
+.landing-bg{
     background-image: url("img/imagecontainer/man-and-woman-holding-battle-ropes-1552242.jpg") !important;
     background-size: cover;
+}
+
+.login-bg{
+    background-image: url("img/imagecontainer/barbell-on-the-floor-1552252.jpg") !important;
+    background-size: cover;
+}
+.login-body{
+    background-color: #559ea6;
+   align-content: center;
+}
+nav{
+    opacity: 50% !important;
+    /*background-color: transparent!important;*/
 }
 
 
@@ -11,6 +24,16 @@ body{
     color: whitesmoke;
     font-family: 'Permanent Marker', cursive;
     font-size: 5em;
+}
+#landing-btn{
+    color: whitesmoke;
+}
+#signup-bg{
+    background-image: url("img/imagecontainer/person-lifting-barbell-indoors-2261485.jpg")!important;
+    background-size: cover;
+}
+#signup-content{
+    background-color: #559ea6;
 }
 #button{
     color: white;
