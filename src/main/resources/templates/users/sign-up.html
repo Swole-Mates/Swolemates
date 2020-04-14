@@ -3,43 +3,46 @@
 <head>
     <meta charset="UTF-8" />
     <title>Sign up</title>
+    <link rel="stylesheet" href="/stylesheet.css">
 </head>
 <nav th:replace="partials/navbar :: nav"></nav>
-<body>
-
-<div class="signup-content">
-    <div class="register-body d-flex justify-content-center flex-column">
+<body id="signup-bg">
+<div>
+    <div class="register-body d-flex justify-content-center">
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="text-center px-2">
         </div>
-        <div class="container">
-            <h1 class="text-center mb-4 sign-up">SIGN-UP</h1>
+        <div class="container justify-content-center col-3"  id="signup-content">
+            <h1 class="text-center mb-4 justify-content-center sign-up">Sign up</h1>
             <form th:action="@{/register}" th:method="POST" th:object="${user}">
                 <div class="d-flex flex-column justify-content-center align-items-center">
-    <form th:action="@{/sign-up}" method="POST" th:object="${user}">
-     <label for="username">Username</label>
-    <input th:field="*{username}" />
+                    <form th:action="@{/sign-up}" method="POST" th:object="${user}">
+                     <label for="username">Username</label>
+                    <input th:field="*{username}" />
 
-    <label for="email">Email</label>
-    <input th:field="*{email}" />
+                    <label for="email">Email</label>
+                    <input th:field="*{email}" />
 
-    <label for="password">Password</label>
-    <input type="password" th:field="*{password}" />
+                    <label for="password">Password</label>
+                    <input type="password" th:field="*{password}" />
 
-    <label for="age">Age</label>
-    <input  th:field="*{age}" />
+                    <label for="age">Age</label>
+                    <input  th:field="*{age}" />
 
-    <label for="zip">ZIP</label>
-    <input  th:field="*{zip}" />
+                    <label for="zip">ZIP</label>
+                    <input  th:field="*{zip}" />
                 <br>
                 <button type="submit" class="register-btn mt-1">Register</button>
         </form>
-        <div class="d-flex justify-content-center align-items-center pt-2 mb-0">
+        <div class="d-flex justify-content-center align-items-center pt-4 mb-0">
+        </div>
+                </div>
+            </form>
         </div>
     </div>
-            </form>
 </div>
-    </div>
-</div>
-
 </body>
 </html>

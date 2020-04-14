@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8" />
     <title>Log In</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"-->
+<!--          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link rel="stylesheet" href="/stylesheet.css">
 </head>
-<body>
+
+<body class="login-bg">
+
 <div th:include="partials/navbar :: nav"></div>
-<div class="page-content">
+<div class="page-content d-flex justify-content-center flex-column-center md-4">
     <div class="login-body">
-        <div class="container text-center">
-            <br>
-            <br>
-            <br>
+        <div class="container text-center flex-column-center">
             <br>
             <br>
             <br>
@@ -32,6 +31,7 @@
                 </div>
             </div>
 
+            <div class="login">
             <form th:action="@{/login}" method="post">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <label for="username"></label>
@@ -40,9 +40,10 @@
                     <label for="password"></label>
                     <input id="password" class="password" name="password" type="password" placeholder="Password"/>
                     <br>
-                    <input type="submit" class="login-btn mt-2" value="Log In"/>
+                    <input type="submit" class="login-btn mt-2" id="btn btn-outline-info" value="Log In"/>
                 </div>
             </form>
+            </div>
         </div>
     </div>
 </div>
