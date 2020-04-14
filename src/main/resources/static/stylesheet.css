@@ -11,6 +11,10 @@
     background-color: #559ea6;
    align-content: center;
 }
+
+.posts-bg{
+    background-image: url("img/imagecontainer/brass-colored-ring-with-black-strap-1552251.jpg");
+}
 nav{
     opacity: 50% !important;
     /*background-color: transparent!important;*/
