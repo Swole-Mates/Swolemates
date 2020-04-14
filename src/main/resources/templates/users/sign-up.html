@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Sign up</title>
+    <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <nav th:replace="partials/navbar :: nav"></nav>
@@ -32,7 +33,7 @@
     <label for="zip">ZIP</label>
     <input  th:field="*{zip}" />
                 <br>
-                <button type="submit" class="register-btn mt-1">Register</button>
+                <button type="submit" class="register-btn mt-1 bg-danger btn-outline-danger" id="button">Register</button>
         </form>
         <div class="d-flex justify-content-center align-items-center pt-2 mb-0">
         </div>
