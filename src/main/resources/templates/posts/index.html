@@ -25,7 +25,7 @@
             <div th:each="post : ${posts}">
                 <a th:href="@{|/posts/${post.id}|}"><h1 class="card-title text-secondary" th:text="${post.title}"></h1></a>
                 <p class="card-text" th:text="${post.body}"></p>
-                <a th:href="@{|/test/${post.user.id}|}"><button class=" bg-danger btn-outline-danger" id="button" >Chat</button></a>
+                <a th:href="@{|/test/${post.user.id}|}" target="_blank"><button class=" bg-danger btn-outline-danger" id="button" >Chat</button></a>
     <!--            <p>User Information : </p>-->
     <!--            <a th:href="'mailto:'+${post.user.email}"><span th:text="${post.user.email}"></span> </a>-->
 
