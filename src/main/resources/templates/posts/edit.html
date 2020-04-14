@@ -23,7 +23,7 @@
             <br>
             <textarea id="body" name="body" th:text="${post.body}" placeholder="Enter body"></textarea>
             <br>
-            <button type="button" class="btn btn-lg bg-danger btn-block btn-outline-danger" id="button">Update Post</button>
+            <a th:href="@{/posts/${post.id}/edit|}" id="landing-btn" class="mt-3"><button type="submit" class="btn btn-lg bg-danger btn-block btn-outline-danger" id="button">Update Post</button></a>
         </form>
         </div>
     </div>
