@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -24,13 +25,15 @@
                     <a class="nav-link" href="/about-us">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/posts">Work outs</a>
+                    <a class="nav-link" href="/posts">Workouts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/test/user-select">Messaging</a>
+                    <a class="nav-link" href="/posts/create">Create a Workout</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/logout">Logout</a>
+                    <form th:action="@{/logout}" th:method="post">
+                        <button class="nav-link bg-dark ">Logout</button>
+                    </form>
                 </li>
             </ul>
         </div>

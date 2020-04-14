@@ -14,8 +14,14 @@ nav{
     opacity: 50% !important;
     /*background-color: transparent!important;*/
 }
+
+*{
+    font-family: 'Permanent Marker', cursive;
+}
 #landing-h1{
     color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5em;
 }
 #landing-btn{
     color: whitesmoke;
@@ -26,4 +32,38 @@ nav{
 }
 #signup-content{
     background-color: #559ea6;
+}
+#button{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#swole-logo{
+    font-family: 'Permanent Marker', cursive;
+    color: #DC3545;
+    font-size: 2em;
+}
+
+.nav-item .nav-link{
+    color: white;
+    font-size: 1.25em;
+}
+
+#navbarNav{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#quote{
+    color: white;
+    font-size: 3em;
+}
+
+#about-us-container{
+    font-family: 'Permanent Marker', cursive;
+}
+
+#landing-btn .buy-stock-btn{
+    font-family: 'Permanent Marker', cursive;
+    background-color: transparent;
+
 }

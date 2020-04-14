@@ -3,6 +3,7 @@
 <head>
 <!--    <th:block th:include="fragments/header.html :: header(title = 'Test Talk JS')"/>-->
     <meta class="talkJSAppId" th:content="${talkJSAppId}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <nav th:replace="partials/navbar2 :: nav2"></nav>
 <body>
@@ -50,7 +51,7 @@
         conversation.setParticipant(other);
         // subject is optional
         conversation.setAttributes({
-            subject: "Cats vs Dogs"
+            subject: "Workout chat"
         });
         const inbox = talkSession.createInbox({selected: conversation});
         inbox.mount(document.getElementById("talkjs-container"));
