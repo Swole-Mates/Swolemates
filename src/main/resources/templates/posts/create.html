@@ -9,8 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-<nav th:replace="partials/navbarCreate :: navCreate"></nav>
 <body>
+<nav th:replace="partials/navbarCreate :: navCreate"></nav>
+<header class="container">
+    <div class="jumbotron bg-transparent text-white">
+        <h1 class="text-center display-1">Create Workout</h1>
+    </div>
+</header>
 <div class="card mx-auto text-center md-2" style="width: 35rem;">
     <div class="card-body" style="width: 35rem">
         <h1>Create Post</h1>
