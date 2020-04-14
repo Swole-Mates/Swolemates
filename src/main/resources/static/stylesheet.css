@@ -20,6 +20,11 @@ nav{
     opacity: 50% !important;
     /*background-color: transparent!important;*/
 }
+
+a:hover {
+             color: white;
+             /*background-color: #DC3545;*/
+         }
 .profile-bg{
     background-image: url("img/imagecontainer/grayscale-photo-of-black-adjustable-dumbbell-949131.jpg")!important;
     background-size: cover;
@@ -33,6 +38,9 @@ nav{
     background-size: cover;
 }
 
+.logo-bottom:hover{
+    color: #DC3545;
+}
 *{
     font-family: 'Permanent Marker', cursive;
 }
@@ -69,6 +77,14 @@ nav{
 
 #swole-logo{
     font-size: 2em;
+}
+
+.swole-logo:hover{
+    color: white;
+}
+
+#swole-logo:hover{
+    color: white;
 }
 
 .nav-item .nav-link{
