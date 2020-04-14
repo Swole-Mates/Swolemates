@@ -20,7 +20,14 @@ nav{
     /*background-color: transparent!important;*/
 }
 
+a:hover{
+    color: white;
+    /*background-color: #DC3545;*/
+}
 
+.logo-bottom:hover{
+    color: #DC3545;
+}
 *{
     font-family: 'Permanent Marker', cursive;
 }
@@ -57,6 +64,14 @@ nav{
 
 #swole-logo{
     font-size: 2em;
+}
+
+.swole-logo:hover{
+    color: white;
+}
+
+#swole-logo:hover{
+    color: white;
 }
 
 .nav-item .nav-link{
