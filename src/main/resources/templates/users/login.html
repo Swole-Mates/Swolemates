@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <title>Log In</title>
-<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"-->
-<!--          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link rel="stylesheet" href="/stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
@@ -12,17 +10,9 @@
 <body class="login-bg">
 
 <div th:include="partials/navbar :: nav"></div>
-<div class="page-content d-flex justify-content-center flex-column-center md-4">
+<div class="row col-4 justify-content-center align-self-center mx-auto text-center p-2 card login-box-image">
     <div class="login-body">
-        <div class="container text-center flex-column-center">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h1 class="mb-4 text-white">Log In</h1>
+            <h1 class="mb-4">Log In</h1>
             <div class="mb-4 login-warn">
                 <div th:if="${param.error}">
                     Invalid Username or Password.
@@ -35,16 +25,18 @@
             <div class="login">
             <form th:action="@{/login}" method="post">
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <label for="username"></label>
-                    <input id="username" class="username" name="username" type="text" placeholder="Username"/>
-                    <br>
-                    <label for="password"></label>
-                    <input id="password" class="password" name="password" type="password" placeholder="Password"/>
-                    <br>
+                    <div class="form-group">
+                                <label for="username"></label>
+                                <input id="username" name="username" type="text" placeholder="Username">
+                        <span></span>
+                            </div>
+                            <div>
+                                <label for="password"></label>
+                                <input id="password" name="password" type="password" placeholder="Password">
+                                <span></span>
+                            </div>
 
-                    <input type="submit" class="login-btn mt-2" id="btn btn-outline-info" value="Log In"/>
-
-                    <input type="submit" class="login-btn mt-2 bg-danger btn-outline-danger" id="button" value="Log In"/>
+                    <input type="submit" class="login-btn mt-2 bg-danger" id="btn btn-outline-info" value="Log In"/>
                 </div>
             </form>
             </div>

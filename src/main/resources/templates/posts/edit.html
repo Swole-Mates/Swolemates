@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Edit Post</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheet.css">
 </head>
 <nav th:replace="partials/navbar2 :: nav2"></nav>
-<body>
+<body class="edit-bg">
     <h1>Edit Post</h1>
     <form th:action="@{|/posts/${post.id}/edit|}" th:method="POST">
         <label for="title">Title</label>
