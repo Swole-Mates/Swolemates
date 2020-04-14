@@ -9,13 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body>
+
+<body class="chat-bg">
 <div th:include="partials/navbarAbout :: navAbout"></div>
 <header class="container">
     <div class="jumbotron bg-transparent text-white">
         <h1 class="text-center display-1">Messages</h1>
     </div>
 </header>
+
 <input id="user-id" type="hidden" th:value="${user.id}">
 <input id="username" type="hidden" th:value="${user.username}">
 <input id="email" type="hidden" th:value="${user.email}">
