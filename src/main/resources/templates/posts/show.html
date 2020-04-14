@@ -23,7 +23,7 @@
     <div sec:authorize="isAuthenticated()">
 
         <div th:if="${userName == post.user.username}">
-            <a th:href="@{|/posts/${post.id}/edit|}"><button>Edit Post</button></a>
+            <a th:href="@{|/posts/${post.id}/edit|}"><button type="button" class="btn btn-lg bg-danger btn-block btn-outline-danger" id="button">Edit Post</button></a>
         </div>
     </div>
 <!--    <div sec:authorize="isAuthenticated()">-->
