@@ -9,9 +9,28 @@
 }
 .login-body{
     background-color: #559ea6;
-   background-size: cover;
+    background-size: cover;
 }
-
+#profile-card{
+    background-color: #559ea6;
+    background-size: cover;
+}
+#show-card{
+    background-color: #559ea6;
+    background-size: cover;
+}
+#edit-card{
+    background-color: #559ea6;
+    background-size: cover;
+}
+#edit-crd{
+    background-color: #559ea6;
+    background-size: cover;
+}
+#create-card{
+    background-color: #559ea6;
+    background-size: cover;
+}
 .posts-bg{
     background-image: url("img/imagecontainer/brass-colored-ring-with-black-strap-1552251.jpg")!important;
     background-size: cover;
@@ -62,7 +81,25 @@ a:hover {
 }
 #landing-btn{
     color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
 }
+#loginbtn{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+#delete-btn{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+#edit-btn{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+#profile-btn{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
 #signup-bg{
     background-image: url("img/imagecontainer/person-lifting-barbell-indoors-2261485.jpg")!important;
     background-size: cover;
