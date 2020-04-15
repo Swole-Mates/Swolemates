@@ -10,13 +10,13 @@
 
 <header class="container">
     <div class="jumbotron bg-transparent text-white">
-        <h1 class="text-center display-1">Edit Profile</h1>
+        <h1 class="text-center display-1" style="color: whitesmoke">Edit Profile</h1>
     </div>
 </header>
 
 <div class="card mx-auto text-center mt-2" style="width: 35rem;">
     <div class="card-body" style="width: 35rem">
-        <form th:action="@{/edit}" method="POST" th:object="${user}">
+        <form th:action="@{/edit}" method="POST" th:object="${user}" id="edit-card">
 
             <label for="username">Username</label>
             <input th:field="*{username}"/>
@@ -33,8 +33,8 @@
             <label for="zip">ZIP</label>
             <input  th:field="*{zip}" />
 
-
-            <input value="Save Changes" type="submit" class="btn btn-lg bg-danger btn-block btn-outline-danger" />
+            <span></span>
+            <input value="Save Changes" type="submit" class="btn btn bg-danger btn-block btn-outline-danger" id="profile-btn" style="color: whitesmoke" />
         </form>
     </div>
 </div>
