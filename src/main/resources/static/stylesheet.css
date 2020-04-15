@@ -51,6 +51,14 @@ a:hover {
              color: white;
              /*background-color: #DC3545;*/
          }
+
+.b{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.c{
+    color: black;
+}
 .profile-bg{
     background-image: url("img/imagecontainer/grayscale-photo-of-black-adjustable-dumbbell-949131.jpg")!important;
     background-size: cover;

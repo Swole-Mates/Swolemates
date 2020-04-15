@@ -22,19 +22,19 @@
     <div class="card mx-auto text-center md-2" style="width: 35rem;">
         <div class="card-body" style="width: 35rem">
         <main class="container">
-            <div th:each="post : ${posts}" class="login-body">
-                <a th:href="@{|/posts/${post.id}|}"><h1 class="card-title text-secondary" th:text="${post.title}"></h1></a>
-                <p class="card-text" th:text="${post.body}"></p>
-                <a th:href="@{|/test/${post.user.id}|}" target="_blank"><button class=" bg-danger btn-outline-danger" id="button" >Chat</button></a>
+            <div th:each="post : ${posts}" class="login-body">                
+          <a th:href="@{|/posts/${post.id}|}"><h1 class="card-title text-secondary c" th:text="${post.title}"></h1></a>
+                <p class="card-text b" th:text="${post.body}"></p>
+                <a th:href="@{|/test/${post.user.id}|}" target="_blank"><button class="btn btn-danger" id="button" >Chat</button></a>
     <!--            <p>User Information : </p>-->
     <!--            <a th:href="'mailto:'+${post.user.email}"><span th:text="${post.user.email}"></span> </a>-->
 
                     <div th:if="${post.user.id} == ${user.id}">
                          <br>
-                            <a th:href="@{|/posts/${post.id}/edit|}"><button class="mb-2 bg-danger btn-outline-danger" style="color: whitesmoke" id="edit-btn">Edit Post</button></a>
+                            <a th:href="@{|/posts/${post.id}/edit|}"><button class="b mb-2 bg-danger btn-outline-danger" style="color: whitesmoke" id="edit-btn">Edit Post</button></a>
                             <form th:action="@{|/posts/${post.id}/delete|}" th:method="POST" style="display:inline">
                                 <button class="mb-2 bg-danger btn-outline-danger" style="color: whitesmoke" id="delete-btn">Delete Post</button>
-                            </form>
+         </form>
                     </div>
                 <hr>
             </div>
