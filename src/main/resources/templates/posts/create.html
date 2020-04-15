@@ -18,7 +18,7 @@
 </header>
 <div class="card mx-auto text-center md-2" style="width: 35rem;">
     <div class="card-body" style="width: 35rem">
-        <form th:action="@{|/posts/create|}" th:method="POST">
+        <form th:action="@{|/posts/create|}" th:method="POST" id="create-card">
             <label for="title">Title</label>
             <br>
             <input id="title" type="text" name="title" th:value="title" placeholder="Enter title">
