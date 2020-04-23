@@ -23,7 +23,7 @@
         <div class="card-body" style="width: 35rem">
         <main class="container">
             <div th:each="post : ${posts}" class="login-body">                
-          <a th:href="@{|/posts/${post.id}|}"><h1 class="card-title c" id="PostTitle" th:text="${post.title}"></h1></a>
+          <a th:href="@{|/posts/${post.id}|}"><h1 class="card-title c" th:text="${post.title}"></h1></a>
                 <p class="card-text b" th:text="${post.body}"></p>
                 <a th:href="@{|/test/${post.user.id}|}" target="_blank"><button class="btn btn-danger" id="button" >Chat</button></a>
     <!--            <p>User Information : </p>-->
