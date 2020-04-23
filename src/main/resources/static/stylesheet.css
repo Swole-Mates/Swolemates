@@ -223,17 +223,17 @@ i{
     color: black;
 }
 
-#PostTitle{
-    color: black;
-    text-decoration: none;
-}
+/*#PostTitle{*/
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*}*/
 
-#PostTitle:hover{
-    color: white;
-    text-decoration: none;
-}
+/*#PostTitle:hover{*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*}*/
 
-#PostTitle:active{
-    color: white;
-    text-decoration: none;
-}
+/*#PostTitle:active{*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*}*/
